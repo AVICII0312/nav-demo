@@ -5,25 +5,32 @@
 a {
     text-decoration: none;
 } 
+body {
+    background: #8B9598 url(https://i.loli.net/2019/04/24/5cc058fc3d20e.jpg) no-repeat center center;
+    background-size: cover;
+}
 kbd {
-    border: solid 1px red;
-    width: 4em;
-    height: 4em;
-    display: inline-block;
+     display: inline-block;
     text-transform: uppercase;
     position: relative;
 }
 main {
     text-align: center;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 #mainxxx {
-    display:inline-block;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius:10px;
+    padding: 15px;
 }
 #mainxxx > div:nth-child(2) {
-    margin-left:1em;
+    margin-left:10px;
 }
 #mainxxx > div:nth-child(3) {
-    margin-left: 2em;
+    margin-left: -60px;
 }
 div > kbd > button {
     position: absolute;
@@ -34,4 +41,30 @@ div > kbd > button {
 
 div > kbd:hover > button {
     display: inline-block;
+}
+.keycolor {
+    width: 80px;
+    height: 60px;
+    line-height: 40px;
+    background: linear-gradient(to bottom, #292929 0%,#131313 100%);
+    box-shadow: 0 0 0 2px #1A1B1C, 0 2px 0 2px #010101;
+    border: 1px solid #323232;
+    border-radius: 5px;
+    color: white;
+    font-size: 32px;
+    font-family: fradm;
+    margin: 10px;
+
+}
+div > kbd > img {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    bottom: 4px;
+    left: 5px;
+}
+kbd > span {
+    position: absolute;
+    top: 0px;
+    left: 15px;
 }
